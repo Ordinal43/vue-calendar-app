@@ -1,0 +1,78 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "snap": "readonly",
+        "gtag": "readonly"
+    },
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+    "plugins": [
+        "vue"
+    ],
+    "rules": {
+        "indent": [
+            "warn",
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "no-trailing-spaces": [
+            "warn"
+        ],
+        "eol-last": [
+            "warn"
+        ],
+        "comma-dangle": [
+            "warn",
+            "never"
+        ],
+        "vue/html-indent": [
+            "warn",
+            2
+        ],
+        "space-before-function-paren": [
+            "warn",
+            "always"
+        ],
+        "brace-style": [
+            "warn",
+            "1tbs"
+        ],
+        "arrow-spacing": [
+            "warn",
+            { "before": true, "after": true }
+        ],
+        "space-before-blocks": [
+            "warn",
+            "always"
+        ],
+        "keyword-spacing": [
+            "warn",
+            { "before": true, "after": true }
+        ]
+    }
+}
