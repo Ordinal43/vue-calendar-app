@@ -6,9 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "mock": "json-mock-api --port 3000 --directory ."
+    "mock": "json-mock-api --port 3000 --directory . -c"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "json-mock-api": "^1.2.2",
     "register-service-worker": "^1.7.1",
